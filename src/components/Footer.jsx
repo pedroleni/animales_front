@@ -1,9 +1,13 @@
 
-
+import "./Footer.css"
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer>
+      <p>
+        Made with ❤️ by <strong>Pedro y Lukman</strong>
+      </p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
