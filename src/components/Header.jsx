@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-<nav class="navbar">
+<nav className="navbar">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnHH1KE2pXzktFg5U3kHnKpMuI9rBCoHgsMQ&usqp=CAU" alt="logo" />
-  <p class="parrafo animated bounceInLeft infinite">Bienvenidos y Bienvenidas!!</p>
-  <ul class="nav-links">
+  <p className="parrafo animated bounceInLeft infinite">Bienvenidos y Bienvenidas!!</p>
+  <ul className="nav-links">
     
     <li>
        <Link to="/" > Home </Link>
@@ -20,7 +20,7 @@ const Header = () => {
       </li>
     
     <li>
-      <Link to="/register"><i class="fa-solid fa-user sign-in-icon"></i> Register</Link>
+      <Link to="/register">Register</Link>
       </li>
     
   </ul>
