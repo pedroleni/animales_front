@@ -1,23 +1,30 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+.logo_nav{
+  width: 15%;
+}
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+header{
+  background: rgb(254,255,254);
+  background: linear-gradient(0deg, rgba(254,255,254,1) 17%, rgba(26,43,99,1) 93%);
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4527a0;
+  
   font-family: Lato, sans-serif;
+  height: 19vh;
   padding: 25px 5%;
   color: #fff;
 }
-.navbar img {
-    height:  50px;
+
+.container_image_logo_header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
 }
+
 
 .nav-logo {
   color: #fff;
@@ -30,17 +37,29 @@
   display: flex;
   list-style: none;
 }
+.logo_nav{
+  width: 35%;
+}
+.logo_nav2{
+  width: 15%;
+  opacity: 0.8;
+}
 
+
+.button_home{width: 40%;}
 .nav-links a {
-  color: #fff;
+  color: #192b41;
+  font-weight: bolder ;
   text-decoration: none;
-  padding: 20px 20px;
+  padding: 30px 30px;
   border-radius: 10px;
 }
 
-.nav-links a:hover {
-  background-color: #3e2391;
-}
+.button_home:hover {
+   /* background-size: cover;
+  background-image: url(../../public/images/home.gif); */
+} 
+
 
 .sign-in-icon {
   display: inline-block;

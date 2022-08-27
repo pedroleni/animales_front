@@ -2,7 +2,9 @@
 
 const Register = () => {
   return (
-    <div>Register</div>
+    <section className="register">
+    
+    </section>
   )
 }
 

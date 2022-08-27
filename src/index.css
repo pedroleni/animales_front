@@ -1,1 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section{
+  height: 71vh;
+}
+
+img{
+  width: 100%;
+}
+
+li a{
+  color: #192b41}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+  background-color: #fefffe;
+  color: #192b41;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #e393c3  ;
+}

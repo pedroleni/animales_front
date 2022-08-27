@@ -1,0 +1,27 @@
+.logo_home{
+ width: 35%;
+}
+
+.home{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container_home{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.welcome{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_footer{
+    width: 35%;
+}

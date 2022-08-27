@@ -1,8 +1,9 @@
 
-
 const Mascotas = () => {
   return (
-    <div>Animales</div>
+    <section className="mascotas">
+    
+  </section>
   )
 }
 

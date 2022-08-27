@@ -6,6 +6,7 @@ const Footer = () => {
       <p>
         Made with ❤️ by <strong>Pedro y Lukman</strong>
       </p>
+      
     </footer>
   );
 };

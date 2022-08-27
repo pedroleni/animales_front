@@ -2,7 +2,9 @@
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <section className="profile">
+    
+    </section>
   )
 }
 
