@@ -8,18 +8,18 @@ export const JwtContextProvider = ({ children }) => {
     return savedJwt || null;
   });
 
-  const [animal, setAnimal] = useState(() => {          
-    const savedAnimal = localStorage.getItem("aninal");
-    const initialValue = JSON.parse(savedAnimal);
+  const [user, setUser] = useState(() => {
+    const savedUser = localStorage.getItem("user");
+    const initialValue = JSON.parse(savedUser);
     return initialValue || null;
   });
 
   const [editingAnimal, setEditingAnimal] = useState({});
 
   const logout = () => {
-    setAnimal(null);
+    setUser(null);
     setJwt(null);
-    localStorage.removeItem("animal");    //seteamos a null tokens y animales y borramos de la memoria a estos
+    localStorage.removeItem("user");    //seteamos a null tokens y animales y borramos de la memoria a estos
     localStorage.removeItem("token");
   };
 
@@ -28,8 +28,8 @@ export const JwtContextProvider = ({ children }) => {
       value={{
         jwt,
         setJwt,
-        animal,
-        setAnimal,
+        user,
+        setUser,
         logout,
         editingAnimal,
         setEditingAnimal,

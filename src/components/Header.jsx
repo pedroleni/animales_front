@@ -1,6 +1,10 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { JwtContext } from "../contexts/jwtContext";
 const Header = () => {
+  const { user, logout } = useContext(JwtContext);
+  let navigate = useNavigate();
   return (
     <header>
       <nav className="navbar">
@@ -20,14 +24,39 @@ const Header = () => {
           <li className="button_mascotas">
             <Link to="/mascotas">Mascotas</Link>
           </li>
-          <li className="button_login">
-            <Link to="/login">Login</Link>
-          </li>
-
-          <li className="button_register">
-            <Link to="/register">Register</Link>
-          </li>
+          {user ? (
+            <>
+              <li>
+                <Link to="/profile">Profile</Link>
+              </li>
+            </>
+          ) : null}
         </ul>
+
+        <div className="control">
+          {user ? (
+            <>
+              <p>Welcome {user.username}</p>
+
+              {user.avatar !== "undefined" ? (
+                <img src={user?.image} alt="User Avatar" />
+              ) : null}
+
+              <button onClick={() => logout() & navigate("/login")}>
+                Logout
+              </button>
+            </>
+          ) : (
+            <ul>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/register">Register</Link>
+              </li>
+            </ul>
+          )}
+        </div>
       </nav>
     </header>
   );

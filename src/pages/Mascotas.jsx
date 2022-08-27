@@ -16,7 +16,7 @@ const Mascotas = () => {
       mascota.name.toLowerCase().includes(filterWord) ||
       mascota.nick.toLowerCase().includes(filterWord) ||
       mascota.description?.toLowerCase().includes(filterWord) ||
-      mascota.searchCouple.toLowerCase().includes(filterWord)
+      mascota.searchCouple?.toLowerCase().includes(filterWord)
       
       
   );
