@@ -1,9 +1,20 @@
+import "./SearchBar.css"
+import { useState } from "react";
+const SearchBar = ({setFilterWord}) => {
 
 
-const SearchBar = () => {
-  return (
-    <div>SearchBar</div>
-  )
-}
+  // const [type, setType] = useState("")
+  // const valueFilter = () =>{ button.value?
+  //   (search.value.toLowerCase()+button.value
+  //   ) : (
+  //   search.value.toLowerCase())
+  // }
 
-export default SearchBar
+  return <>
+  <button type="button" value="inlove" onClick={() => setFilterWord("inlove")}>In love</button>
+  <button type="button" vale="soltero" onClick={() => setFilterWord("soltero")}>Single</button>
+  <input type="text" id="search" className="searchbar" onChange={() => setFilterWord(search.value.toLowerCase())} placeholder="Search by name, brand or description"/>
+  </>
+};
+
+export default SearchBar;

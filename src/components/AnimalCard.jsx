@@ -13,7 +13,7 @@ const AnimalCard = ({ mascota }) => {
       <p><span>Residencia: </span>{mascota.location}</p>
       <p><span>Edad: </span> {mascota.age}</p>
       
-      {mascota.searchCouple ? (
+      {mascota.searchCouple === "soltero" ? (
         <p className="single">Solter@</p>
       ) : (
         <p className="inlOVE">Enamorad@</p>
