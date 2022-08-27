@@ -46,3 +46,13 @@ h3,
 h4 {
   color: #e393c3  ;
 }
+
+button{
+  outline: none;
+  border: none;
+  padding: 0.3rem 1rem;
+  background-color: #192b41;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  color:#fffbee
+}
