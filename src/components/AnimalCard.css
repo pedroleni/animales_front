@@ -1,0 +1,32 @@
+.Mascotacard {
+    width: 320px;
+    min-height: 480px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.6rem;
+    background-color: #23283e0f;
+    border-radius: 5%;
+  }
+  
+  .card_image{
+      border-radius: 5%;
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+  
+  }
+
+
+  
+  
+  .inLOVE {
+    color: crimson;
+    text-align: right;
+  }
+  
+  .single {
+    color: green;
+    text-align: right;
+  }

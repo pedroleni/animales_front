@@ -7,11 +7,15 @@
 }
 
 section{
-  height: 71vh;
+  min-height: 71vh;
 }
+
 
 img{
   width: 100%;
+}
+.image_footer{
+  width: 35%;
 }
 
 li a{
