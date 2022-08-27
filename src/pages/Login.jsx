@@ -40,7 +40,10 @@ const Login = () => {
         <input
           type="password"
           id="password"
-          name="password"
+          name="password" 
+          title="Minimo 6 caracteres, debe contener al menos una letra mayuscula, 
+          al menos una minuscula y debe tener un caracter especial" 
+          pattern="^(?=.*[A-Z])(?=.*[.!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$"
           {...register("password")}
         />
         <button type="submit">Login</button>

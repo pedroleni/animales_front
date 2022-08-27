@@ -36,7 +36,7 @@ const Header = () => {
         <div className="control">
           {user ? (
             <>
-              <p>Welcome {user.username}</p>
+              <p>Welcome {user.name}</p>
 
               {user.avatar !== "undefined" ? (
                 <img src={user?.image} alt="User Avatar" />
