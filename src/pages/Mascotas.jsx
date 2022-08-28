@@ -40,12 +40,11 @@ const Mascotas = () => {
   return (
     <section>
       <div className="container_mascotas">
+      <h2>Mascotas</h2>
         <SearchBar setFilterWord={setFilterWord} />
         {console.log(filterWord)}
-        <h2>Mascotas</h2>
+        
         <div className="gallery_mascotas">
-          
-            {" "}
             {allMascotas.length ? (
               filteredMascotas.map((mascota) => (
                 <AnimalCard mascota={mascota} key={mascota._id} />

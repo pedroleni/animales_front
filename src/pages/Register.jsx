@@ -44,36 +44,15 @@ const Register = () => {
 
         <label htmlFor="password"> Password </label>
         <input type="password" id="password" name="password" 
-        title="Minimo 6 caracteres, debe contener al menos una letra mayuscula, al menos una minuscula y debe tener un caracter especial" pattern="^(?=.*[A-Z])(?=.*[.!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$" {...register("password")}/>
+        title="Minimo 6 caracteres, debe contener al menos una letra mayuscula,
+         al menos una minuscula y debe tener un caracter especial" 
+         pattern="^(?=.*[A-Z])(?=.*[.!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$" 
+         {...register("password")}/>
        
 
         <label htmlFor="nick"> Nick </label>
         <input type="text" id="nick" name="nick" {...register("nick")}/>
         
-
-        {/* <label htmlFor="edad"> Edad </label>
-        <input type="text" id="edad" name="edad" {...register("edad")}/>
-        
-
-        <label htmlFor="location"> Location </label>
-        <input type="text" id="location" name="location" {...register("location")}/>
-        
-
-        <label htmlFor="type"> Type </label>
-        <input type="text" id="type" name="type" {...register("type")}/>
-        
-
-        <label htmlFor="description"> Description </label>
-        <input type="text" id="description" name="description" {...register("description")}/>
-         */}
-
-        {/* <label htmlFor="searchCouple">SearchCouple</label>
-        <input type="radio" value="searchCouple"  {...register("searchCouple")}>Con pareja</input>
-        <input type="radio" value="searchCouple" {...register("searchCouple")}>Soltero</input> */}
-
-
-  
-
         <button type="submit">Register</button>
       </form>
     </section>

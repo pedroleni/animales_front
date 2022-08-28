@@ -12,6 +12,7 @@ const AnimalCard = ({ mascota }) => {
       <h4 className="nick"><span>Nick: </span>{mascota.nick}</h4>
       <p><span>Residencia: </span>{mascota.location}</p>
       <p><span>Edad: </span> {mascota.age}</p>
+      <p><span>¿Como soy?: </span> {mascota.description}</p>
       
       {mascota.searchCouple !== "inlove" ? (
         <p className="single">Solter@</p>

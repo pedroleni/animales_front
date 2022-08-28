@@ -14,12 +14,25 @@ const Profile = () => {
 
   const defaultValues = {
     nick: user.nick,
+    age: user.age,
+    location: user.location,
+    type: user.type,
+    description: user.description,
+    image: user.image
   };
 
   const formSubmit = (data) => {
     const formData = new FormData();
     formData.append("nick", data.nick);
-    formData.append("image", data.image[0]);
+    formData.append("age", data.age);
+    formData.append("location", data.location);
+    formData.append("type", data.type);
+    formData.append("description", data.description);
+    // formData.append("searchCouple", data.searchCouple);
+    data.image[0]? (formData.append("image", data.image[0])
+    ) : (
+      <></>)
+    
     API.patch(`/${user._id}`, formData).then((res) => {
       logout();
       if (res) {
@@ -40,7 +53,55 @@ const Profile = () => {
           {...register("nick")}
           defaultValue={defaultValues.nick}
         />
-        <input type="file" id="image" name="image" {...register("image")} />
+        <input 
+          type="file" 
+          id="image" 
+          name="image" 
+          {...register("image")} 
+          />
+
+        <label htmlFor="age"> Edad </label>
+        <input 
+          type="text" 
+          id="age" 
+          name="age" 
+          {...register("age")}
+          defaultValue={defaultValues.age}/>
+        
+
+        <label htmlFor="location"> Location </label>
+        <input 
+          type="text" 
+          id="location" 
+          name="location" 
+          {...register("location")}
+          defaultValue={defaultValues.location}/>
+        
+
+        <label htmlFor="type"> Type </label>
+        <input 
+          type="text" 
+          id="type" 
+          name="type" 
+          {...register("type")}
+          defaultValue={defaultValues.type}/>
+
+        <label htmlFor="description"> Description </label>
+        <textarea className="container_description" 
+          type="text" 
+          id="description" 
+          name="description" 
+          cols="30" 
+          rows="6"
+          {...register("description")}
+          defaultValue={defaultValues.description}
+          />
+
+        {/* <label htmlFor="searchCouple">SearchCouple</label>
+        <input type="radio" value="searchCouple"  {...register("searchCouple")}>Con pareja</input>
+        <input type="radio" value="searchCouple" {...register("searchCouple")}>Soltero</input> */}
+
+
         <button type="submit">Edit Profile</button>
       </form>
     </section>
