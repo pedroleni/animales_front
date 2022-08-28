@@ -7,7 +7,6 @@ import Swal from "sweetalert2";
 
 const Register = () => {
   const { register, handleSubmit } = useForm();
-  const [searchCouple, setSearchCouple] = useState("acoustic")
   let navigate = useNavigate();
 
   const formSubmit = (data) => {
@@ -15,18 +14,23 @@ const Register = () => {
     formData.append("name", data.name);
     formData.append("nick", data.nick);
     formData.append("password", data.password);
-    // formData.append("age", data.age);
-    // formData.append("location", data.location);
-    // formData.append("type", data.type);
-    // formData.append("description", data.description);
-    // formData.append("searchCouple", data.searchCouple);
     formData.append("image", data.image[0]);
-    API.post("/register", formData).then((res) => {
+    API.post("/register", formData)
+    .then((res) => {
       if (res) {
         navigate("/login");
-        Swal.fire("Bienvenido, ya te puedes loguear con tus datos");
-      }
-    });
+        Swal.fire("Bienvenido, ya te puedes loguear con tus datos");}
+    })
+     .catch(function (error) {
+       if (error.response) {
+        const errores = JSON.stringify(error.response.data)
+        const includess = errores.includes('this animal already exist')
+        const includess2 = errores.includes('Failed create animal')
+        if(includess2){Swal.fire("Error inexperado, vuelva a intentarlo");}
+        if(includess){Swal.fire("Esta mascota ya existe");}
+         
+       } 
+     });
   };
 
   return (

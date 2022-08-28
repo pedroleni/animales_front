@@ -21,8 +21,23 @@ const Login = () => {
       if (res.data.token) {
         navigate("/");
         Swal.fire("Bienvenido a la web, ya puedes ver las mascotas y no olvides completar tu perfil")
-      }
-    });
+      }})
+      
+      .catch(function (error) {
+        if (error.response) {
+         const errores = JSON.stringify(error.response.data)
+         const includess = errores.includes('Animal no found')
+         const includess2 = errores.includes('invalid password')
+         const includess3 = errores.includes('Unexpected error login')
+         
+        
+ 
+         if(includess){Swal.fire("Esta mascota no se encuentra");}
+         if(includess2){Swal.fire("Contraseña no correcta");}
+         if(includess3){Swal.fire("Error inexperado, vuelva a intentarlo");}
+         
+        } 
+      });
   };
 
   return (
@@ -41,9 +56,7 @@ const Login = () => {
           type="password"
           id="password"
           name="password" 
-          title="Minimo 6 caracteres, debe contener al menos una letra mayuscula, 
-          al menos una minuscula y debe tener un caracter especial" 
-          pattern="^(?=.*[A-Z])(?=.*[.!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$"
+          
           {...register("password")}
         />
         <button type="submit">Login</button>
