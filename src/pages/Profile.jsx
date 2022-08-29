@@ -19,7 +19,8 @@ const Profile = () => {
     description: user.description,
     image: user.image,
     searchCouple:user.searchCouple,
-    owner:user.owner
+    owner:user.owner,
+    contact:user.contact
   };
 
   const formSubmit = (data) => {
@@ -31,6 +32,7 @@ const Profile = () => {
     formData.append("searchCouple", data.searchCouple);
     formData.append("description", data.description);
     formData.append("owner", data.owner);
+    formData.append("contact", data.contact);
     
 
     // formData.append("searchCouple", data.searchCouple);
@@ -114,6 +116,15 @@ const Profile = () => {
           name="owner"
           {...register("owner")}
           defaultValue={defaultValues.owner}
+          
+        />
+        <label htmlFor="contact">Contacto: </label>
+        <input
+          type="text"
+          id="contact"
+          name="contact"
+          {...register("contact")}
+          defaultValue={defaultValues.contact}
           
         />
 

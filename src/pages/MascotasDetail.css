@@ -1,0 +1,33 @@
+.container_image_detail{
+
+    width: 60vw;
+
+}
+
+.container_detail{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+    
+}
+
+.container_info_detail{
+    margin: 40px;
+    font-size: 25px;
+}
+
+.container_info_detail span{
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.container_info_detail h2{
+    font-size:100px;
+
+}  
+
+.image_detail img{ 
+    border-radius: 5%;
+}

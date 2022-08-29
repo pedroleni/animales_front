@@ -67,7 +67,8 @@ h1,
 h2,
 h3,
 h4 {
-  color: #e393c3  ;
+  color: #e393c3;
+  text-transform: capitalize;
 }
 
 button{
