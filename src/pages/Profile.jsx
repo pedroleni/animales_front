@@ -68,8 +68,8 @@ const Profile = () => {
   };
   return (
     <section className="profile">
-      <h2>Profile</h2>
-      <img src={user.image} alt="User image" />
+      <div className="profile_title"><img src="./images/profile.gif" alt="titulo_pet" /></div>
+      <img className="image_pet" src={user.image} alt="User image" />
       <form onSubmit={handleSubmit(formSubmit)}>
         <input
           type="text"

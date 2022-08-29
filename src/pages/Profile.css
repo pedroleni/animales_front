@@ -6,7 +6,7 @@
     gap: 1rem;
 }
 
-.profile img{
+.image_pet{
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -23,3 +23,11 @@
 .container_description{
     
 }
+
+.profile_title{
+    width: 60%;
+}
+
+
+
+

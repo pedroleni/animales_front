@@ -1,6 +1,6 @@
 .Mascotacard {
     width: 320px;
-    min-height: 480px;
+    min-height: 300px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -19,10 +19,10 @@
   
   .inlOVE{
     color: crimson;
-    text-align: right;
+   
   }
   
   .single {
     color: green;
-    text-align: right;
+    
   }
