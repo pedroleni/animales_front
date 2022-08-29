@@ -41,6 +41,29 @@ const Profile = () => {
       }
     });
   };
+
+  const deleteAnimal = () => {
+    Swal.fire({
+      title: "¿Estas seguro de borrar la mascota?",
+      text: "No la vas a poder recuperar",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si, borrala!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+          API.delete(`/${user._id}`).then((res) => {
+            if (res) {
+              logout();
+              navigate("/");
+              Swal.fire("Mascota eliminada");
+            }
+          });
+        
+      }
+    });
+  };
   return (
     <section className="profile">
       <h2>Profile</h2>
@@ -104,6 +127,7 @@ const Profile = () => {
 
         <button type="submit">Edit Profile</button>
       </form>
+      <button onClick={() => deleteAnimal()}>Delete</button>
     </section>
   );
 };

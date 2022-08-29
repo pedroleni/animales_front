@@ -9,26 +9,29 @@ const toggleSidenav = () => {
   const line2__bars = document.querySelector(".line2__bars-menu");
   const line3__bars = document.querySelector(".line3__bars-menu");
 
-
   line1__bars.classList.toggle("activeline1__bars-menu");
   line2__bars.classList.toggle("activeline2__bars-menu");
   line3__bars.classList.toggle("activeline3__bars-menu");
-
 };
+
+const darkmode = () => {
+  const btnSwitch = document.querySelector('#switch');
+	document.body.classList.toggle('dark');
+	btnSwitch.classList.toggle('active');
+}
+
 
 const Header = () => {
   const { user, logout } = useContext(JwtContext);
   let navigate = useNavigate();
   return (
     <>
-
-
-      <div className="menu-btn" >
-      <div className="bars__menu" onClick={toggleSidenav} >
-        <span className="line1__bars-menu"></span>
-        <span className="line2__bars-menu"></span>
-        <span className="line3__bars-menu"></span>
-      </div>
+      <div className="menu-btn">
+        <div className="bars__menu" onClick={toggleSidenav}>
+          <span className="line1__bars-menu"></span>
+          <span className="line2__bars-menu"></span>
+          <span className="line3__bars-menu"></span>
+        </div>
       </div>
       <div className="wrapper">
         <header>
@@ -40,6 +43,16 @@ const Header = () => {
               <div className="logo_nav2">
                 <img src="./images/cita.png" alt="logo" />
               </div>
+
+              {/* -------dark mode ------------*/}
+              <button className="switch" id="switch" onClick={darkmode}>
+                <span>
+                  <i className="fas fa-sun"></i>
+                </span>
+                <span>
+                  <i className="fas fa-moon"></i>
+                </span>
+              </button>
             </div>
 
             <ul className="main-menu">
@@ -64,17 +77,16 @@ const Header = () => {
                     <>
                       <p>Welcome {user.name}</p>
                       <div className="container_imagen_logout">
-                      {user.avatar !== "undefined" ? (
-                        <div><img src={user?.image} alt="User Avatar" /></div>
-                        
-                      ) : null}
+                        {user.avatar !== "undefined" ? (
+                          <div>
+                            <img src={user?.image} alt="User Avatar" />
+                          </div>
+                        ) : null}
 
-                      <button onClick={() => logout() & navigate("/login")}>
-                        Logout
-                      </button>
-
+                        <button onClick={() => logout() & navigate("/login")}>
+                          Logout
+                        </button>
                       </div>
-                      
                     </>
                   ) : (
                     <ul>
