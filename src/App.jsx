@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import RequireAuth from "./components/RequiredAuth";
+import MascotasDetail from "./pages/MascotasDetail";
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/mascotas" element={<Mascotas/>} />
+            <Route path="/mascotas/:id" element={<MascotasDetail/>} />
             <Route
               path="/profile"
               element={

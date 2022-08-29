@@ -30,7 +30,7 @@ const SearchBar = ({ setFilterWord }) => {
         <button
           type="button"
           vale="soltero"
-          onClick={() => setFilterWord("soltero")}
+          onClick={() => setFilterWord("single")}
         >
           Single
         </button>

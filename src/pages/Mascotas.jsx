@@ -7,6 +7,9 @@ import "./Mascotas.css"
 import Comentarios from "../components/Comentarios";
 
 
+
+
+
 const Mascotas = () => {
   const [allMascotas, setAllMascotas] = useState([]);
   const [filterWord, setFilterWord] = useState("");

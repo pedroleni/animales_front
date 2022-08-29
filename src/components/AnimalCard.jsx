@@ -1,11 +1,14 @@
 
+import React from "react";
 import "./AnimalCard.css";
 import Swal from "sweetalert2";
-import Mascotas from "../pages/Mascotas";
+import { Link } from "react-router-dom";
+
 
 const AnimalCard = ({ mascota }) => {
   
   return (
+    <Link to={`/mascotas/${mascota._id}`}>
     <figure className="Mascotacard">
       <img className="card_image" src={mascota.image} alt={mascota.nick} />
       <h4 className="name_mascota ">{mascota.name}</h4>
@@ -23,6 +26,7 @@ const AnimalCard = ({ mascota }) => {
         
       )}
     </figure>
+     </Link>
   );
 };
 
