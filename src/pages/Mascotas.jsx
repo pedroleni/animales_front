@@ -4,6 +4,7 @@ import { API } from "../services/API";
 import AnimalCard from "../components/AnimalCard";
 
 import "./Mascotas.css"
+import Comentarios from "../components/Comentarios";
 
 
 const Mascotas = () => {
@@ -30,6 +31,9 @@ const Mascotas = () => {
   };
 
 
+  
+
+
 
 
   useEffect(() => {
@@ -53,7 +57,6 @@ const Mascotas = () => {
               <p>Loading mascotas...</p>
             )}
         </div>
-
         <div className="image_footer">
           <img src="./images/animales.png" alt="logo" />
         </div>

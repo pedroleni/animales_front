@@ -5,9 +5,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+footer{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background: rgba(26,43,99,1);
+background: linear-gradient(0deg,rgba(26,43,99,1) 5%,rgba(254,255,254,1)  97%);
+  
+}
+
+.comentario {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.image_footer{
+  width: 50%;
+}
 
 section{
   min-height: 71vh;
+}
+
+.disqus_thread{
+  width: 700px;
 }
 
 

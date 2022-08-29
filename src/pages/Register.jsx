@@ -11,7 +11,7 @@ const Register = () => {
   const formSubmit = (data) => {
     const formData = new FormData();
     formData.append("name", data.name);
-    formData.append("nick", data.nick);
+    formData.append("nick", data.nick.trim());
     formData.append("password", data.password);
     formData.append("image", data.image[0]);
     API.post("/register", formData)

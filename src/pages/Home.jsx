@@ -1,5 +1,6 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Comentarios from "../components/Comentarios";
 const Home = () => {
   return (
     <section className="home">
@@ -16,6 +17,7 @@ const Home = () => {
       <div className="image_footer">
         <img src="./images/animales.png" alt="logo" />
       </div>
+
     </section>
   );
 };
