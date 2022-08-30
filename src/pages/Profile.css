@@ -7,17 +7,19 @@
 }
 
 .image_pet{
-    width: 200px;
-    height: 200px;
+    width: 700px;
+    height: 800px;
     object-fit: cover;
     border: 2px solid #fffbee;
+    
 }
 
 .profile form{
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 1rem
 }
 
 .container_description{
@@ -27,6 +29,60 @@
 .profile_title{
     width: 60%;
 }
+
+.container_profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 40px;
+
+}
+
+.container_image_profile {
+    width: 700px;
+    height: 800px;
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+
+.delete_profile{
+    width: 80%;
+    margin-top: 10px;
+    background-color: #cb7dd7;
+
+  }
+
+
+.submit_profile{
+    width: 80%;
+
+}
+
+.container_info_profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.container_info_profile form .submit_profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container_info_profile form .submit_profile button{
+    width: 80%;
+}
+
 
 
 

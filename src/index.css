@@ -15,10 +15,12 @@ background: linear-gradient(0deg,rgba(26,43,99,1) 5%,rgba(254,255,254,1)  97%);
   
 }
 
-.comentario {
+.comentario{
   display:flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+
   
 }
 .image_footer{
@@ -31,7 +33,10 @@ section{
 
 .disqus_thread{
   width: 700px;
+  background-color: whitesmoke;
 }
+
+
 
 
 img{
