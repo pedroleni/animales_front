@@ -41,10 +41,10 @@ const Header = () => {
           <nav className="main-nav">
             <div className="container_image_logo_header">
               <div className="logo_nav">
-                <img src="./images/logo.png" alt="logo" />
+                <img src="https://i.ibb.co/yXvzJhT/logo.png" alt="logo" />
               </div>
               <div className="logo_nav2">
-                <img src="./images/cita.png" alt="logo" />
+                <img src="https://i.ibb.co/Y0CB9M9/cita.png" alt="logo" />
               </div>
 
               {/* -------dark mode ------------*/}
