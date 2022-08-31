@@ -16,6 +16,7 @@ const MascotasDetail = () => {
 
   useEffect(() => {
     getMascotas();
+    console.log(id)
   }, []);
 
   return (
