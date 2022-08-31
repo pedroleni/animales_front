@@ -10,22 +10,21 @@ footer{
   display: flex;
   justify-content: center;
   align-items:center;
-  background: rgba(26,43,99,1);
-background: linear-gradient(0deg,rgba(26,43,99,1) 5%,rgba(254,255,254,1)  97%);
+  background: rgba(254,255,254,1);
+background: linear-gradient(180deg,rgba(254,255,254,1) 5%,rgba(26,43,99,1) 97%);
   
 }
 
 .comentario{
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
 
   
 }
-.image_footer{
-  width: 50%;
-}
+
 
 section{
   min-height: 71vh;
@@ -43,7 +42,7 @@ img{
   width: 100%;
 }
 .image_footer{
-  width: 35%;
+  width: 70%;
 }
 
 li a{
@@ -55,10 +54,7 @@ a {
     color: inherit;
 }
 
-body {
-  background-color: #fefffe;
-  color: #192b41;
-}
+
 
 li {
   list-style-type: none;
@@ -83,5 +79,48 @@ button{
   background-color: #192b41;
   border-radius: 0.2rem;
   font-weight: bold;
-  color:#fffbee
+  color:#fffbee;
+  height: 60px;
+  margin-bottom: 10px;
+
+  
 }
+
+
+.title_chat{
+  width: 90vw;
+  margin-top:2vh
+}
+
+body.dark .button_logout_control{
+  background-color: #faa4e0;;
+  color:rgba(26,43,99,1)
+}
+
+.button_logout_control {
+  height: 30px;
+}
+
+body.dark  .button_logout_control_ {
+  height: 30px;
+}
+
+input{
+  height: 30px;
+}
+
+.searchbar{
+  width: 50%;
+}
+
+
+@media (max-width: 900px){
+
+.button_logout_control {
+  height: 60px;
+
+}
+
+body.dark .button_logout_control {
+  height: 60px;
+}}

@@ -42,32 +42,27 @@ const MascotasDetail = () => {
               {mascota.owner}
             </p>
             <p>
-              <span>Age: </span>
-              {mascota.age}
+              <span>Contact: </span>
+              {mascota.contact}
             </p>
             <p>
               <span>Location: </span>
               {mascota.location}
             </p>
             <p>
-              <span>Contact: </span>
-              {mascota.contact}
+              <span>Age: </span>
+              {mascota.age}
             </p>
+          
+            
             <p>
               <span>Type: </span>
               {mascota.type}
             </p>
-            <p>
-              <span>¿Buscas pareja?: </span>
-              {mascota.searchCouple}
-            </p>
+      
             <p>
               <span>Description: </span>
               {mascota.description}
-            </p>
-            <p>
-              <span>Residencia: </span>
-              {mascota.location}
             </p>
           </div>
         </figure>

@@ -1,13 +1,126 @@
-.login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.login form{
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
 }
+
+.login_title,
+.login_title_black {
+  width: 60%;
+}
+
+.login_title_black {
+  display: none;
+}
+
+body.dark .login_title_black {
+  display: block;
+}
+
+.login_title {
+  display: block;
+}
+
+body.dark .login_title {
+  display: none;
+}
+
+body.dark label {
+  color: pink;
+}
+
+body.dark .submit_profile button {
+  background-color: #7cddf9;
+}
+
+.container_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animal_login img {
+  width: 300px;
+}
+.animal_login_two {
+  width: 300px;
+}
+
+body.dark .submit_login {
+  background-color: #faa4e0;
+  color: #192b41;
+}
+
+@media (max-width: 578px) {
+
+    .animal_login img {
+        width: 200px;
+      }
+      .animal_login_two {
+        width: 200px;
+      }
+
+
+}
+
+@media (max-width: 501px) {
+
+    .animal_login img {
+        width: 150px;
+      }
+      .animal_login_two {
+        width: 150px;
+      }
+
+      .container_login{
+        margin-top: 30px;
+      }
+
+
+      .login_title_black {
+        width: 90%;
+      }
+      
+      .login_title {
+        width: 90%;
+      }
+
+
+}
+
+
+@media (max-width: 395px) {
+
+    .animal_login img {
+        width: 85px
+      }
+      .animal_login_two {
+        width: 85px;
+      }
+
+      .container_login{
+        margin-top: 50px;
+      }
+
+
+      .login_title_black {
+        width: 100%;
+      }
+      
+      .login_title {
+        width: 100%;
+      }
+
+
+}
+
+
+

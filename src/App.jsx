@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { JwtContextProvider } from "./contexts/jwtContext";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Intermedio from "./components/Intermedio";
 import Home from "./pages/Home";
 import Mascotas from "./pages/Mascotas";
 import Profile from "./pages/Profile";
@@ -33,7 +33,7 @@ function App() {
             <Route path="/register" element={<Register />} />
           </Routes>
 
-          <Footer />
+          <Intermedio />
         </Router>
       </JwtContextProvider>
               

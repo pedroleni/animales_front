@@ -47,7 +47,8 @@ const Mascotas = () => {
   return (
     <section>
       <div className="container_mascotas">
-      <div className="title_pets"><img src="./images/pets_world.gif" alt="titulo_pet" /></div>
+      <div className="title_pets"><img src="./images/mascotas_white.gif" alt="titulo_pet" /></div>
+      <div className="title_pets_black"><img src="./images/mascotas_black.gif" alt="titulo_pet" /></div>
     
         <SearchBar setFilterWord={setFilterWord} />
         {console.log(filterWord)}

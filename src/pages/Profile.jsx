@@ -70,9 +70,13 @@ const Profile = () => {
 
   return (
     <section className="profile">
-      <div className="profile_title">
-        <img src="./images/profile.gif" alt="titulo_pet" />
+      <div className="profile_title_black">
+        <img src="/images/profile_black.gif" alt="titlo" />
       </div>
+      <div className="profile_title">
+        <img src="/images/profile.gif" alt="titulo_profile" />
+      </div>
+
       <div className="container_profile">
         <div className="container_image_profile">
           <img className="image_pet" src={user.image} alt="User image" />
@@ -159,9 +163,13 @@ const Profile = () => {
               defaultValue={defaultValues.description}
             />
 
-            <div className="submit_profile"><button  type="submit">Edit Profile</button></div>
+            <div className="submit_profile">
+              <button type="submit">Edit Profile</button>
+            </div>
           </form>
-          <button className="delete_profile" onClick={() => deleteAnimal()}>Delete</button>
+          <button className="delete_profile" onClick={() => deleteAnimal()}>
+            Delete
+          </button>
         </div>
       </div>
     </section>

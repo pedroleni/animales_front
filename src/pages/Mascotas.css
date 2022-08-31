@@ -18,6 +18,39 @@
 
 }
 
-.title_pets{
+.title_pets , .title_pets_black{
     width: 60%;
 }
+
+
+
+body.dark .title_pets_black{
+    display:block;
+  }
+  
+  .title_pets_black{
+    display:none;
+  }
+
+  .title_pets{
+    display:block;
+  }
+
+  body.dark .title_pets{
+    display:none;
+  }
+
+
+  @media (max-width: 580px) {
+
+    .title_pets_black{
+      width: 90%;}
+
+    .title_pets{
+      width: 90%;}
+
+
+
+
+
+  }

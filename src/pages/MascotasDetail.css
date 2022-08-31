@@ -31,3 +31,8 @@
 .image_detail img{ 
     border-radius: 5%;
 }
+
+
+body.dark .container_info_detail span {
+    color:#e393c3;
+}

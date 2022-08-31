@@ -14,7 +14,24 @@
 
 }
 
-@media (max-width: 700px) {
+
+
+body.dark .container_button button{
+    background-color: #faa4e0;
+    color: #192b41
+}
+
+@media (max-width: 768px) {
+
+    .container_button{
+        width: 30%;
+        margin: 20px;
+        gap: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
 
 
 }

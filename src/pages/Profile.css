@@ -26,7 +26,7 @@
     
 }
 
-.profile_title{
+.profile_title , .profile_title_black{
     width: 60%;
 }
 
@@ -66,8 +66,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
 
+.container_info_profile label{
+    font-weight: bolder;
 }
 
 .container_info_profile form .submit_profile{
@@ -82,6 +84,137 @@
 .container_info_profile form .submit_profile button{
     width: 80%;
 }
+
+
+.profile_title_black{
+    display:none;
+  
+  }
+  
+  body.dark .profile_title_black {
+    display:block;
+  
+  }
+
+.profile_title{
+    display:block;
+
+  }
+
+  body.dark .profile_title{
+    display:none;
+
+}
+
+body.dark label{
+    color: pink
+}
+
+body.dark .submit_profile button{
+    background-color: #7cddf9;
+
+}
+
+@media (max-width: 992px) {
+
+    .image_pet{
+        width: 80%;
+        height: auto;        
+        border-radius: 5%;
+        
+    }
+
+    .container_image_profile{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5%;
+        
+
+    }
+
+    
+    .profile form{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        gap: 1rem
+    }
+    .container_profile{
+        flex-direction: column;
+    }
+
+    .container_image_profile{
+        height: 100%;
+    }
+ 
+  }
+
+
+  @media (max-width: 577px) {
+
+    .image_pet{
+        width: 80%;
+        height: auto;
+        
+    }
+    .image_pet{
+        border-radius: 30%;
+    }
+    
+    .profile form{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        gap: 1rem
+    }
+    .container_profile{
+        flex-direction: column;
+    }
+
+    .container_image_profile{
+        height: 100%;
+        width: 100%;
+  }
+}
+
+
+  @media (max-width: 579px) {
+
+    .image_pet{
+        width: 60%;
+        height: auto;
+        
+    }
+
+    .profile form{
+        width: 60vw;
+    }
+
+    .container_image_profile{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }}
+
+
+   @media (max-width: 579px) {
+
+        .image_pet{
+            width: 60%;
+            border-radius: 5%;
+        }}
+            
+
+
+
+
+  
 
 
 

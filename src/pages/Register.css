@@ -1,9 +1,13 @@
 .register{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 5rem;
+
+}
+
+.animal_login_secret{
+    display:none
 }
 
 .register form{
@@ -11,3 +15,88 @@
     flex-direction: column;
     gap: 0.8rem;
 }
+
+.register_title , .register_title_black{
+    width: 60%;
+}
+
+
+
+.register_title_black{
+    display:none;
+  
+  }
+  
+  body.dark .register_title_black {
+    display:block;
+  
+  }
+
+.register_title{
+    display:block;
+
+  }
+
+  body.dark .register_title{
+    display:none;
+
+}
+
+body.dark label{
+    color: pink
+}
+
+body.dark .submit_profile button{
+    background-color: #7cddf9;
+
+}
+
+.container_register{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animal_register img{
+    width: 300px;
+}
+.animal_register_two{
+    width: 300px; }
+
+
+body.dark .submit_register{
+    background-color: #faa4e0;
+    color: #192b41
+ }
+
+
+
+
+ @media (max-width: 768px) {
+    .animal_register img{
+        width: 200px;
+    }
+    .animal_register_two{
+        width: 200px; }
+    
+
+ }
+
+ @media (max-width: 580px) {
+
+    .animal_register img{
+        display: none;
+    }
+    .animal_register_two{
+        display: none }
+
+    .animal_login_secret{
+        display:block;
+        width: 60%;
+     }
+    
+
+}
+
+
+

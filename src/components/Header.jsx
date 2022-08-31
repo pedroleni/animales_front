@@ -14,10 +14,13 @@ const toggleSidenav = () => {
   line3__bars.classList.toggle("activeline3__bars-menu");
 };
 
+
+
 const darkmode = () => {
   const btnSwitch = document.querySelector('#switch');
-	document.body.classList.toggle('dark');
-	btnSwitch.classList.toggle('active');
+  btnSwitch.classList.toggle('active');
+  document.body.classList.toggle('dark');
+
 }
 
 
@@ -75,20 +78,21 @@ const Header = () => {
                 <div className="control">
                   {user ? (
                     <>
-                      <p>Welcome {user.name}</p>
+                      <p className="welcome">Welcome {user.name}</p>
                       <div className="container_imagen_logout">
                         {user.avatar !== "undefined" ? (
-                          <div>
-                            <img src={user?.image} alt="User Avatar" />
+                          <div className="image_control">
+                            <img className="image_control_image" src={user?.image} alt="User Avatar" />
                           </div>
                         ) : null}
 
-                        <button onClick={() => logout() & navigate("/login")}>
+                        <button onClick={() => logout() & navigate("/login")} className="button_logout_control">
                           Logout
                         </button>
                       </div>
                     </>
                   ) : (
+                    <>
                     <ul>
                       <li>
                         <Link to="/login">Login</Link>
@@ -97,6 +101,10 @@ const Header = () => {
                         <Link to="/register">Register</Link>
                       </li>
                     </ul>
+                    <div className="logo_noUser" >
+                    <img src="./images/logo.png" alt="logo" />
+                  </div>
+                  </>
                   )}
                 </div>
               </div>

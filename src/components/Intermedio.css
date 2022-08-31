@@ -1,0 +1,21 @@
+.intermedio{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: rgba(254,255,254,1);
+  background: linear-gradient(180deg,rgba(254,255,254,1) 5%, rgba(26,43,99,1) 97%);
+    
+}
+
+ body.dark .intermedio {
+
+  background: rgba(26,43,99,1);
+  background: linear-gradient(180deg,rgba(26,43,99,1) 5%, rgba(254,255,254,1) 97%);
+
+ }
+
+
+
+
+
