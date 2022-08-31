@@ -200,15 +200,17 @@ body.dark .submit_profile button{
         display: flex;
         justify-content: center;
         align-items: center;
-    }}
+    }
+}
 
 
    @media (max-width: 579px) {
 
-        .image_pet{
+    .image_pet{
             width: 60%;
             border-radius: 5%;
-        }}
+        }
+    }
             
 
 
