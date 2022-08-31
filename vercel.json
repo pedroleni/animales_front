@@ -1,0 +1,12 @@
+{
+  "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/mascotas/:id", "dest": "/" },
+      { "src": "/mascotas", "dest": "/" },
+      { "src": "/profile", "dest": "/" },
+      { "src": "/login", "dest": "/" },
+      { "src": "/register", "dest": "/" },
+      { "src": "/[^.]+", "dest": "/", "status": 200 }
+  
+  ]
+}
