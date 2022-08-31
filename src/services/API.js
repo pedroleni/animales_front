@@ -12,7 +12,7 @@ export const APIHeaders = {
 };
 
 export const API = axios.create({
-  baseURL: "https://pets-api-sepia.vercel.app/api/v1/animal",
-  timeout: 15000,
+  baseURL: "http://localhost:8080/api/v1/animal",
+  timeout: 25000,
   headers: APIHeaders,
 });
