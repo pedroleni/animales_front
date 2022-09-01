@@ -43,11 +43,15 @@ const Register = () => {
           const errores = JSON.stringify(error.response.data);
           const includess = errores.includes("this animal already exist");
           const includess2 = errores.includes("Failed create animal");
+          const includess3 = errores.includes("Internal Server Error");
           if (includess2) {
             Swal.fire("Error inexperado, vuelva a intentarlo");
           }
           if (includess) {
             Swal.fire("Esta mascota ya existe");
+          }
+          if (includess3) {
+            Swal.fire("Error en el registro, el nick de la mascota ya existe Pets World, por favor vuelva a introducir un nuevo nick");
           }
         }
       });
