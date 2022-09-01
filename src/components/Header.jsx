@@ -59,17 +59,17 @@ const Header = () => {
             </div>
 
             <ul className="main-menu">
-              <li className="button_home">
+              <li className="button_home" onClick={toggleSidenav}>
                 <Link to="/"> Home </Link>
               </li>
 
-              <li className="button_mascotas">
-                <Link to="/mascotas">Mascotas</Link>
+              <li className="button_mascotas" onClick={toggleSidenav}>
+                <Link to="/mascotas" >Mascotas</Link>
               </li>
               {user ? (
                 <>
-                  <li>
-                    <Link to="/profile">Profile</Link>
+                  <li onClick={toggleSidenav}>
+                    <Link to="/profile" >Profile</Link>
                   </li>
                 </>
               ) : null}
@@ -94,10 +94,10 @@ const Header = () => {
                   ) : (
                     <>
                     <ul>
-                      <li>
-                        <Link to="/login">Login</Link>
+                      <li onClick={toggleSidenav}>
+                        <Link to="/login" >Login</Link>
                       </li>
-                      <li>
+                      <li onClick={toggleSidenav}>
                         <Link to="/register">Register</Link>
                       </li>
                     </ul>

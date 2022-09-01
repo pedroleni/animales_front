@@ -36,3 +36,14 @@
 body.dark .container_info_detail span {
     color:#e393c3;
 }
+
+@media (max-width: 913px){
+    .container_detail{
+        flex-direction: column;
+    }
+    .container_detail h2{
+
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

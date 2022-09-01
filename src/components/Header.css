@@ -7,56 +7,53 @@ header {
   );
 }
 
-.logo_noUser{
+.logo_noUser {
   width: 100%;
   height: 100%;
   display: none;
 }
-.logo_noUser img{
+.logo_noUser img {
   height: 40vh;
 }
 
-.welcome{
+.welcome {
   text-align: center;
   font-weight: bolder;
   color: #faa4e0;
   width: 100%;
-
 }
 
-
 /* ---------DARK MODE --------------- */
-
-
 
 body.dark {
   background: #0e1e40;
 }
 
-li{
-  display:flex;
+li {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 body.dark nav a {
-  color: #C8C8C8;
+  color: #c8c8c8;
 }
 
 body.dark nav a:hover {
-  color: #FEFEFE;
+  color: #fefefe;
 }
 
-
 body.dark header nav {
-  background: rgba(26,43,99,1);
-  background: linear-gradient(0deg,rgba(26,43,99,1) 5%,rgba(254,255,254,1)  97%);
-    
+  background: rgba(26, 43, 99, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(26, 43, 99, 1) 5%,
+    rgba(254, 255, 254, 1) 97%
+  );
 }
 
 .switch {
-  background: #343D5B;
+  background: #343d5b;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -75,15 +72,15 @@ body.dark header nav {
   width: 37px;
   height: 37px;
   position: absolute;
-  background: #F1F1F1;
+  background: #f1f1f1;
   top: 0;
   left: 0;
   right: unset;
   border-radius: 100px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .switch.active {
@@ -105,14 +102,12 @@ body.dark header nav {
   color: #fff;
 }
 
-
 /* ---------------------------------- */
-
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 
   font-family: Lato, sans-serif;
   height: 19vh;
@@ -120,8 +115,8 @@ body.dark header nav {
   color: #fff;
 }
 
-.logo_noUser{
-  display:none
+.logo_noUser {
+  display: none;
 }
 
 .container_imagen_logout {
@@ -179,10 +174,7 @@ header .control {
   text-decoration: none;
   padding: 30px 30px;
   border-radius: 10px;
-
 }
-
-
 
 .sign-in-icon {
   display: inline-block;
@@ -193,16 +185,14 @@ header .control {
   width: 100%;
   display: flex;
   align-items: center;
-
 }
 
 header .control img {
   border-radius: 50%;
   width: 70%;
-
 }
 
-.image_control{
+.image_control {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,14 +202,12 @@ header .control img {
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   height: 19vh;
   padding: 20px 0;
   font-size: 20px;
   padding-left: 3rem;
 }
-
-
 
 .main-nav ul {
   display: flex;
@@ -276,24 +264,21 @@ header .control img {
   color: #333;
 }
 
-
 @media (max-width: 913px) {
-
-  .logo_noUser{
-    
+  .logo_noUser {
     display: block;
     width: 60%;
     height: 70%;
     padding: 0;
-    margin:0
+    margin: 0;
+  }
+  .main-nav ul li a:hover {
+    border-bottom:none;
   }
 
-  .logo_noUser img{
-    
-    
+  .logo_noUser img {
     width: 60%;
     height: 100%;
-  
   }
   .bars__menu {
     width: 10%;
@@ -308,7 +293,7 @@ header .control img {
     margin: 0px;
     margin-top: 5vh;
     text-align: center;
-    
+
     border-radius: 30px;
     background: rgba(254, 255, 254, 0.471);
     background: linear-gradient(
@@ -321,7 +306,6 @@ header .control img {
 
   .container_imagen_logout {
     width: 60%;
-  
   }
   .container_imagen_logout div .image_control_image {
     width: 100%;
@@ -333,7 +317,7 @@ header .control img {
   header .control p {
     color: whitesmoke;
     font-weight: bolder;
-    margin:20px;
+    margin-top: 20px;
   }
   header .control button {
     width: 80%;
@@ -434,72 +418,56 @@ header .control img {
   .activeline3__bars-menu {
     transform: rotate(-45deg) translate(0.7px, 1px);
   }
-
- 
 }
 
 @media (max-width: 768px) {
-  .welcome{
+  .welcome {
     margin-top: 30px;
-    
   }
-
 
   header .control img {
     width: 70%;
   }
   header .control {
     justify-content: flex-start;
-
   }
 
-  header .control button{
-    margin-top:1rem;
+  header .control button {
+    margin-top: 1rem;
   }
 
-  .bars__menu{
+  .bars__menu {
     margin-top: 60px;
   }
-
-  }    
-
+}
 
 @media (max-width: 579px) {
-  .welcome{
+  .welcome {
     margin-top: 30px;
-    
   }
   header .control img {
     padding: Opx;
     width: 110%;
-
-    
   }
   header .control {
     justify-content: flex-start;
-
   }
 
-  header .control button{
-    margin-top:1rem;
+  header .control button {
+    margin-top: 1rem;
   }
 
-  .bars__menu{
+  .bars__menu {
     margin-top: 60px;
   }
 
-
-  .control .logo_noUser img{
-    width:  50vw;
-    
+  .control .logo_noUser img {
+    width: 40vw;
   }
 
   header .control {
     max-height: 55vh;
   }
-
-
-
 }
 
 @media (max-width: 500px) {
@@ -515,81 +483,70 @@ header .control img {
     width: 8px;
     height: 8px;
     margin-right: 10px;
-    margin-top: 55px;}
+    margin-top: 55px;
+  }
 
-    .switch {
-      background: #343D5B;
-      border-radius: 1000px;
-      border: none;
-      position: relative;
-      cursor: pointer;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      outline: none;
-      margin-left: 18px;
-    }
+  .switch {
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    margin-left: 18px;
+  }
 
-    .switch:after {
-      
-      width: 35px;
-      height: 35px;
-      position: absolute;
-      background: #F1F1F1;
-      top: 0;
-      left: 0;
-      right: unset;
-      border-radius: 100px;
-      -webkit-transition: .3s ease all;
-      transition: .3s ease all;
-      -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-              box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-    }
-    
+  .switch:after {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
 
-    
-    .switch.active::after {
-      right: 0;
-      left: unset;
-    }
-    
-    .switch span {
-      width: 20px;
-      height: 21px;
-      line-height: 25px;
-      display: block;
-      background: none;
-      color: #fff;
-    }
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
 
-    body.dark .button_logout_control{
-      background-color: pink;
-    }
+  .switch span {
+    width: 20px;
+    height: 21px;
+    line-height: 25px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
 
+  body.dark .button_logout_control {
+    background-color: pink;
+  }
 
-      .welcome{
+  .welcome {
     margin-top: 30px;
-    
   }
   header .control {
     justify-content: flex-start;
-
   }
 
-  header .control button{
-    margin-top:1rem;
+  header .control button {
+    margin-top: 1rem;
   }
-
-  
 }
 
-.container_imagen_logout div .image_control_image {
-  width: 120%;
-  height: 120%;
-}
+
 
 @media (max-width: 395px) {
-
   .logo_nav {
     width: 19vh;
   }
@@ -599,31 +556,20 @@ header .control img {
   }
 
   .container_imagen_logout div .image_control_image {
-  width: 120%;
-  height: 120%;
-}
-
-
+    width: 120%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 380px) {
-
   .bars__menu {
     width: 8px;
     height: 8px;
     margin-right: 10px;
-    margin-top: 40px;}
+    margin-top: 40px;
+  }
 
-
-    header .control {
-      max-height: 49vh;
-    }
-
-
-
-
-
-
+  header .control {
+    max-height: 49vh;
+  }
 }
-
-
