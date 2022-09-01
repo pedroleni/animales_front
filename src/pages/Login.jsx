@@ -49,6 +49,7 @@ const Login = () => {
           const includess = errores.includes("Animal no found");
           const includess2 = errores.includes("invalid password");
           const includess3 = errores.includes("Unexpected error login");
+          const includess4 = errores.includes("Internal Server Error");
 
           if (includess) {
             Swal.fire("Esta mascota no se encuentra");
@@ -58,6 +59,9 @@ const Login = () => {
           }
           if (includess3) {
             Swal.fire("Error inexperado, vuelva a intentarlo");
+          }
+          if (includess4) {
+            Swal.fire("Error en el login, por favor vuelva a introducir los datos");
           }
         }
       });
