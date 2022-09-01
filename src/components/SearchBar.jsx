@@ -16,7 +16,7 @@ const SearchBar = ({ setFilterWord }) => {
         id="search"
         className="searchbar"
         onChange={() => setFilterWord(search.value.toLowerCase())}
-        placeholder="Search by name, brand or description"
+        placeholder="Search by name, type or description"
       />
 
 <div className="container_button">
