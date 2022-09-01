@@ -12,7 +12,7 @@ export const APIHeaders = {
 };
 
 export const API = axios.create({
-  baseURL: "http://localhost:8080/api/v1/animal",
+  baseURL: "https://pets-peter-v2.herokuapp.com/api/v1/animal",
   timeout: 25000,
   headers: APIHeaders,
 });
