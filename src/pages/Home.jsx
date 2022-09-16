@@ -14,7 +14,7 @@ const Home = () => {
           <h1>Welcome to Pets House</h1>
           {user ? (
               <>
-              <Link to="/login" className="tologin">Visit the pet's world to meet new friends</Link>
+              <Link to="/mascotas" className="tologin">Visit the pet's world to meet new friends</Link>
                 
               </>
             ) : (
