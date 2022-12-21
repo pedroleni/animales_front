@@ -12,7 +12,8 @@ export const APIHeaders = {
 };
 
 export const API = axios.create({
-  baseURL: "https://pets-peter-v2.herokuapp.com/api/v1/animal",
+  
+  baseURL: "https://petsback-production.up.railway.app/api/v1/animal",
   timeout: 25000,
   headers: APIHeaders,
 });
