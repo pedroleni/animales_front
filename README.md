@@ -1,5 +1,5 @@
 # animales_front!
-BACK: https://github.com/pedroleni/pets_back_heroku
+BACK: https://github.com/pedroleni/pets_back
 Resultado: 
 <img width="1440" alt="Captura de Pantalla 2022-10-03 a las 15 27 09" src="https://user-images.githubusercontent.com/108528939/193589488-5eeee260-5967-46b7-b4fe-ae008fd0c974.png">
 
