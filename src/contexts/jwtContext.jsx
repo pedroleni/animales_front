@@ -1,7 +1,7 @@
 import { useState, createContext } from "react";
 
 export const JwtContext = createContext();
-
+// ESTO ES UNA PRUEBA
 export const JwtContextProvider = ({ children }) => {
   const [jwt, setJwt] = useState(() => {
     const savedJwt = localStorage.getItem("token");  //setea el token guardado en la memoria y retorna ese token o null
